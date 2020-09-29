@@ -1,21 +1,23 @@
 programa
 {
+	inclua biblioteca Matematica --> mat
 	
 	funcao inicio()
 	{
-		real a
-		a=10.41375
-		escreva ("A sua idade em dias é?" , a)
-		inteiro b,c,d
-		b=27
-		c=9
-		d=15
-		escreva (" Você tem exatamente = " , b)
-		escreva (" anos " , c)
-		escreva (" meses e " , d)
-		escreva (" dias")
-	
-	
+		real x1 , x2 , y1 , y2 , dis
+
+		escreva ("\nValor de X1: ")
+		leia (x1)
+		escreva("\nValor de X2: ")
+		leia (x2)
+		escreva ("\nValor de Y1: ")
+		leia (y1)
+		escreva ("\nValor de Y2: ")
+		leia (y2)
+
+		dis = mat.raiz  (mat.potencia ( (x1+x2), 2)+ mat.potencia ( (y1+y2), 2), 2)
+
+		escreva ("\nO resultado é: " , dis)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +25,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 145; 
+ * @POSICAO-CURSOR = 387; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

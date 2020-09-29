@@ -3,19 +3,15 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro a,b,c
-		a=27
-		b=9
-		c=15
-		escreva(" A minha idade é ? " , a) 
-		escreva(" Anos " , b)
-		escreva(" Meses " , c)
-		escreva(" dias " )
-		real d
-		d=10.41375
-		escreva(" Eu ja vivi =  " , d)
-		escreva(" dias")
-		
+		inteiro base , altura , area
+		escreva ("Qual a base do triângulo: ")
+		leia (base)
+		escreva ("Qual a altura do triângulo: ")
+		leia (altura)
+
+		se (base >0 e altura >0){
+			escreva ("A base do triângulo é " , base , " sua altura é " , altura , " é correto informar que a área do triângulo é: " ,((base*altura)/2))
+		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +19,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 222; 
+ * @POSICAO-CURSOR = 268; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
