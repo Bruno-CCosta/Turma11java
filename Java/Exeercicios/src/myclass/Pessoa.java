@@ -45,8 +45,10 @@ public Pessoa (String nome, String telefone) {
 	public String getTelefone() {
 		return telefone;
 	}
-	public void setTelefone(String telefone) {
-		this.telefone = telefone;
+
+	public void setTelefone(String string) {
+		
+		
 	}
 	
 	
