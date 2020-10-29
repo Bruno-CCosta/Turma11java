@@ -4,6 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import myclass.Produto;
+import java.util.HashSet;
+import java.util.LinkedHashSet;
+import java.util.List;
+import java.util.Set;
+
+
+
 
 public class Exercicio3Dia16DeOutubro extends Produto {
 
@@ -48,4 +55,17 @@ public class Exercicio3Dia16DeOutubro extends Produto {
 					
 	}
 
+				lista.add(produto4);
+				index = lista.indexOf(produto4);
+				produto4.setPreco(999.00);
+				lista.set(index, produto4);
+				
+				System.out.println("----------LISTA DEPOIS DE MODIFICAR ----------");
+				for (Object produto : lista) 
+				{
+					System.out.println(produto.toString());
+					System.out.println("\n");
+					System.out.println("\n");
+				}
+				
 	}}
